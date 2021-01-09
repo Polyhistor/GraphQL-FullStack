@@ -6,19 +6,19 @@
   "pet": [
     {
       "id": "3242342342",
-      "type": "Dog",
+      "type": "DOG",
       "name": "Moose",
       "createdAt": "2342342342"
     },
     {
       "id": "56757557",
-      "type": "Cat",
+      "type": "CAT",
       "name": "Moose",
       "createdAt": "2342342342"
     },
     {
       "id": "12315555",
-      "type": "Weka",
+      "type": "CAT",
       "name": "Moose",
       "createdAt": "2342342342"
     },
@@ -26,6 +26,146 @@
       "id": "5BSsunCkEUsbN_35I1pCL",
       "createdAt": 1610163543868,
       "name": "batman",
+      "type": "DOG",
+      "user": "jBWMVGjm50l6LGwepDoty"
+    },
+    {
+      "id": "tLaoKc4ox-lNb2J-o9zNf",
+      "createdAt": 1610170630316,
+      "name": "Smoothie",
+      "type": "DOG",
+      "user": "jBWMVGjm50l6LGwepDoty"
+    },
+    {
+      "id": "rLGDglDY3G94sZ5G3Kd1b",
+      "createdAt": 1610172058606,
+      "name": "teto",
+      "type": "DOG",
+      "user": "jBWMVGjm50l6LGwepDoty"
+    },
+    {
+      "id": "DbxwUcX6_bg4a4hrLM6HT",
+      "createdAt": 1610172593118,
+      "name": "tollo",
+      "type": "DOG",
+      "user": "jBWMVGjm50l6LGwepDoty"
+    },
+    {
+      "id": "iLwwnGb2Vb00-Z3BkVBED",
+      "createdAt": 1610172653360,
+      "name": "terry",
+      "type": "DOG",
+      "user": "jBWMVGjm50l6LGwepDoty"
+    },
+    {
+      "id": "Kh1DfvVkN0Pi27A44eL6v",
+      "createdAt": 1610172675983,
+      "name": "terry ",
+      "type": "CAT",
+      "user": "jBWMVGjm50l6LGwepDoty"
+    },
+    {
+      "id": "qvfbxhuY1l6WCBkZybNct",
+      "createdAt": 1610172744107,
+      "name": "terlo",
+      "type": "DOG",
+      "user": "jBWMVGjm50l6LGwepDoty"
+    },
+    {
+      "id": "gUA-GjwXl9ty_LMNVA7c7",
+      "createdAt": 1610172822301,
+      "name": "terrier",
+      "type": "DOG",
+      "user": "jBWMVGjm50l6LGwepDoty"
+    },
+    {
+      "id": "_l1zgMPXBLGhNeSZXvRvo",
+      "createdAt": 1610172877412,
+      "name": "tollo",
+      "type": "DOG",
+      "user": "jBWMVGjm50l6LGwepDoty"
+    },
+    {
+      "id": "WL3jdEhXSlJ4-QaLVAj-p",
+      "createdAt": 1610172910374,
+      "name": "tt",
+      "type": "DOG",
+      "user": "jBWMVGjm50l6LGwepDoty"
+    },
+    {
+      "id": "1u5BjfXqBDoGI2Vm8N8gq",
+      "createdAt": 1610180738078,
+      "name": "mellow",
+      "type": "CAT",
+      "user": "jBWMVGjm50l6LGwepDoty"
+    },
+    {
+      "id": "V00jbS9e8wvCaTaSTi6DT",
+      "createdAt": 1610181492740,
+      "name": "tello",
+      "type": "DOG",
+      "user": "jBWMVGjm50l6LGwepDoty"
+    },
+    {
+      "id": "BoWiyG0TTnt2JnNb2Hk6M",
+      "createdAt": 1610181658121,
+      "name": "EzyMezy",
+      "type": "DOG",
+      "user": "jBWMVGjm50l6LGwepDoty"
+    },
+    {
+      "id": "JHKABLFoRbkYkZuRqCRbZ",
+      "createdAt": 1610181670067,
+      "name": "tier",
+      "type": "DOG",
+      "user": "jBWMVGjm50l6LGwepDoty"
+    },
+    {
+      "id": "-hsB0f-iPeIHSKRwpkTOc",
+      "createdAt": 1610181803875,
+      "name": "Crypto",
+      "type": "CAT",
+      "user": "jBWMVGjm50l6LGwepDoty"
+    },
+    {
+      "id": "KkOjGnWOfTTmczAcPwILH",
+      "createdAt": 1610181930509,
+      "name": "Triploi",
+      "type": "DOG",
+      "user": "jBWMVGjm50l6LGwepDoty"
+    },
+    {
+      "id": "kLy0PsiIgeti4wjDACNGm",
+      "createdAt": 1610181963370,
+      "name": "Terrier",
+      "type": "DOG",
+      "user": "jBWMVGjm50l6LGwepDoty"
+    },
+    {
+      "id": "uuFV_7DC5yXZr9sQFw9-r",
+      "createdAt": 1610182035169,
+      "name": "cer",
+      "type": "CAT",
+      "user": "jBWMVGjm50l6LGwepDoty"
+    },
+    {
+      "id": "Cs68jCLR-59U0-imCZbiz",
+      "createdAt": 1610182075450,
+      "name": "tero",
+      "type": "CAT",
+      "user": "jBWMVGjm50l6LGwepDoty"
+    },
+    {
+      "id": "r3XWXJ5tr7vFQUEoD0WMP",
+      "createdAt": 1610182114428,
+      "name": "wertts",
+      "type": "CAT",
+      "user": "jBWMVGjm50l6LGwepDoty"
+    },
+    {
+      "id": "6M-4Bd0tTEbC9qN5KETPG",
+      "createdAt": 1610182140334,
+      "name": "ras",
       "type": "DOG",
       "user": "jBWMVGjm50l6LGwepDoty"
     }

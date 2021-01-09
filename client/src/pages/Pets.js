@@ -10,6 +10,7 @@ const ALL_PETS = gql`
     pets {
       name
       id
+      type
       img
     }
   }
@@ -29,24 +30,45 @@ const NEW_PET = gql`
 export default function Pets() {
   const [modal, setModal] = useState(false);
   const { data, loading, error } = useQuery(ALL_PETS);
-  const [createPet, newPet] = useMutation(NEW_PET);
 
-  console.log(data);
+  const [createPet, newPet] = useMutation(NEW_PET, {
+    update(cache, { data: { addPet } }) {
+      const data = cache.readQuery({ query: ALL_PETS });
+      console.log(data);
+      cache.writeQuery({
+        query: ALL_PETS,
+        data: { pets: [addPet, ...data.pets] },
+      });
+    },
+  });
 
   const onSubmit = (input) => {
+    console.log('here');
     setModal(false);
     createPet({
       variables: {
         newPet: input,
       },
+      optimisticResponse: {
+        __typename: 'Mutation',
+        addPet: {
+          __typename: 'Pet!',
+          id: Math.floor(Math.random() * 1000 + ''),
+          name: 'Pouya',
+          type: input.type,
+          img: 'https://i.picsum.photos/id/465/200/300.jpg',
+        },
+      },
     });
   };
 
-  if (loading) {
-    return <Loader />;
-  }
+  // If you're doing optimistic UI update, avoid using loaders, as utilizing loaderes will defeat the purpose of OUI
+  // if (loading || newPet.loading) {
+  //   return <Loader />;
+  // }
 
   if (error) {
+    console.info(error);
     return <p>oops! an error occured...</p>;
   }
 
@@ -68,7 +90,7 @@ export default function Pets() {
         </div>
       </section>
       <section>
-        <PetsList pets={data.pets ? data.pets : null} />
+        <PetsList pets={data && data.pets && data.pets} />
       </section>
     </div>
   );
