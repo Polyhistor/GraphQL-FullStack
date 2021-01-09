@@ -1,1 +1,22 @@
-{}
+{
+    "pets" : [
+        {
+            "id": "3242342342",
+            "type": "Dog",
+            "name": "Moose",
+            "createdAt": "2342342342"
+        }, 
+        {
+            "id": "56757557",
+            "type": "Cat",
+            "name": "Moose",
+            "createdAt": "2342342342"
+        },
+        {
+            "id": "12315555",
+            "type": "Weka",
+            "name": "Moose",
+            "createdAt": "2342342342"
+        }
+    ]
+}
