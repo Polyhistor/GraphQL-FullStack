@@ -8,6 +8,30 @@ import gql from 'graphql-tag';
 /**
  * Create a new apollo client and export as default
  */
+
+const typeDefs = gql`
+  extend type User {
+    age: Int
+  }
+
+  extend type Pet {
+    vaccinated: Boolean
+  }
+`;
+
+const resolvers = {
+  User: {
+    age() {
+      return 35;
+    },
+  },
+  Pet: {
+    vaccinated() {
+      return true;
+    },
+  },
+};
+
 const http = new HttpLink({ uri: 'http://localhost:4000' });
 const delay = setContext(
   (request) =>
@@ -24,6 +48,8 @@ const cache = new InMemoryCache();
 const client = new ApolloClient({
   link,
   cache,
+  resolvers,
+  typeDefs,
 });
 
 const query = gql`
